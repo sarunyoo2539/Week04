@@ -6,10 +6,21 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            string str;
-            Console.Write("Please enter value 1 : ");
-            int val1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(val1);
+            String Name , Last;
+            int Code;
+            double GPA;
+
+            Name = Console.ReadLine();
+            Last = Console.ReadLine();
+            int.TryParse(Console.ReadLine(), out Code);
+            double.TryParse(Console.ReadLine(), out GPA);
+
+            Console.WriteLine();
+            Console.WriteLine("Name: {0}", Name);
+            Console.WriteLine("Last Name: {0}", Last);
+            Console.WriteLine("Age: {0}", Code);
+            Console.WriteLine("Height: {0}", GPA);
+
 
         }
     }
