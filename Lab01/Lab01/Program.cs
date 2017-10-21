@@ -6,10 +6,10 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Data type : bool");
-            Console.WriteLine("Size :" + sizeof(bool));
-            Console.WriteLine("True");
-            Console.WriteLine("False");
+            Console.WriteLine("Data type : sbyte");
+            Console.WriteLine("Size :" + sizeof(sbyte));
+            Console.WriteLine("Minimum Value :" + (int)sbyte.MinValue);
+            Console.WriteLine("Maximum Value :" + (int)sbyte.MaxValue);
         }
     }
 }
