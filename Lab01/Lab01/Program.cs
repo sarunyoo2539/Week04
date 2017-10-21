@@ -6,7 +6,10 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            Console.Write("Hello");
+            Console.WriteLine("Data type : byte");
+            Console.WriteLine("Size :" + sizeof(byte));
+            Console.WriteLine("Minimum Value :" + (int)byte.MinValue);
+            Console.WriteLine("Maximum Value :" + (int)byte.MaxValue);
         }
     }
 }
