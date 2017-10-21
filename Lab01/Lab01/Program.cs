@@ -6,7 +6,7 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            String Name , Last;
+            String Name, Last;
             int Code;
             double GPA;
 
@@ -20,8 +20,6 @@ namespace Lab01
             Console.WriteLine("Last Name: {0}", Last);
             Console.WriteLine("Age: {0}", Code);
             Console.WriteLine("Height: {0}", GPA);
-
-
         }
     }
 }
