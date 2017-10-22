@@ -6,10 +6,10 @@ namespace Lab01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Data type : long");
-            Console.WriteLine("Size :" + sizeof(long));
-            Console.WriteLine("Minimum Value :" + long.MinValue);
-            Console.WriteLine("Maximum Value :" + long.MaxValue);
+            Console.WriteLine("Data type : ulong");
+            Console.WriteLine("Size :" + sizeof(ulong));
+            Console.WriteLine("Minimum Value :" + ulong.MinValue);
+            Console.WriteLine("Maximum Value :" + ulong.MaxValue);
         }
     }
 }
