@@ -6,7 +6,7 @@ public class MathTest
         for (float x = 0; x < Math.PI * 2.0F; x += 0.3F)
         {
             Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" +
-            spaces(Math.Cos(x)) + "*", x, Math.Cos(x));
+            spaces(Math.Tan(x)) + "*", x, Math.Tan(x));
         }
     }
     private static string spaces(double val)
