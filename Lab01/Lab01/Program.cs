@@ -1,24 +1,19 @@
 ﻿using System;
-namespace thruthTable
+namespace variableProperties
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int a = 10 , b = 20 , x = 5 , y = 2 , A,B,C,D,E,F,G,H,I,J;
-            
-            A = a + b;
-            B = x - b;
-            C = x * b;
-            D = y / a;
-            E = b % y;
-            F = y + 10 % x;
-            G = a / 3 * 5;
-            H = 9 / 2 * a;
-            I = y % 8;
-            J = 100 * x + y % 2 - a;
-
-            Console.WriteLine("Answer :\n {0}\n {1}\n {2}\n {3}\n {4}\n {5}\n {6}\n {7}\n {8}\n {9}\n", A,B,C,D,E,F,G,H,I,J);
+            const double lightSpeed = 186000d;   // miles per second
+            Console.WriteLine("Light speed = {0} Mile Per second", lightSpeed);
+            const double mileTokm = 1.609344;
+            Console.WriteLine("Light speed = {0} km Per second", lightSpeed * mileTokm);
+            const double SunToEarthDistance = 93000000d;  // miles
+            Console.WriteLine("SunToEarthDistance = {0} km", SunToEarthDistance * mileTokm);
+            double SunToEarthTimeOfLight = SunToEarthDistance / lightSpeed;  // miles
+            Console.WriteLine("SunToEarthTimeOfLight = {0} seconds", SunToEarthTimeOfLight);
+            Console.WriteLine("SunToEarthTimeOfLight = {0} minutes", SunToEarthTimeOfLight / 60d);
         }
     }
 }
