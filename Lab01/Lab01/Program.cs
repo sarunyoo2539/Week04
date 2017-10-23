@@ -5,19 +5,20 @@ namespace thruthTable
     {
         static void Main(string[] args)
         {
-            int a, b, c, d, e, f;
-            a = 1;
-            b = a + 6;
-            c = b - 3;
-            d = c * 2;
-            e = d / 2;
-            f = e % 2;
-            Console.WriteLine("Answer A : {0}", a);
-            Console.WriteLine("Answer B : {0}", b);
-            Console.WriteLine("Answer C : {0}", c);
-            Console.WriteLine("Answer D : {0}", d);
-            Console.WriteLine("Answer E : {0}", e);
-            Console.WriteLine("Answer F : {0}", f);
+            int a = 10 , b = 20 , x = 5 , y = 2 , A,B,C,D,E,F,G,H,I,J;
+            
+            A = a + b;
+            B = x - b;
+            C = x * b;
+            D = y / a;
+            E = b % y;
+            F = y + 10 % x;
+            G = a / 3 * 5;
+            H = 9 / 2 * a;
+            I = y % 8;
+            J = 100 * x + y % 2 - a;
+
+            Console.WriteLine("Answer :\n {0}\n {1}\n {2}\n {3}\n {4}\n {5}\n {6}\n {7}\n {8}\n {9}\n", A,B,C,D,E,F,G,H,I,J);
         }
     }
 }
