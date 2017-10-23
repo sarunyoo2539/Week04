@@ -1,20 +1,17 @@
 ﻿using System;
-namespace variableProperties
+public class MathTest
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        for (float x = 0; x < Math.PI * 2.0F; x += 0.3F)
         {
-            const double lightSpeed = 186000d;   // miles per second
-            Console.WriteLine("Light speed = {0} Mile Per second", lightSpeed);
-            const double mileTokm = 1.609344;
-            Console.WriteLine("Light speed = {0} km Per second", lightSpeed * mileTokm);
-            const double SunToPlutoDistance = 5945900000;  // miles
-            Console.WriteLine("SunToPlutoDistance = {0} km", SunToPlutoDistance * mileTokm);
-            double SunToPlutoTimeOfLight = SunToPlutoDistance / lightSpeed;  // miles
-            Console.WriteLine("SunToPlutoTimeOfLight = {0} seconds", SunToPlutoTimeOfLight);
-            Console.WriteLine("SunToPlutoTimeOfLight = {0} minutes", SunToPlutoTimeOfLight / 60d);
-            
+            Console.WriteLine("The sine of {0,10:F} = {1,-10:F6}" +
+            spaces(Math.Cos(x)) + "*", x, Math.Cos(x));
         }
+    }
+    private static string spaces(double val)
+    {
+        string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+        return SpaceString;
     }
 }
