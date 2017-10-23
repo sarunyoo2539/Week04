@@ -9,11 +9,11 @@ namespace variableProperties
             Console.WriteLine("Light speed = {0} Mile Per second", lightSpeed);
             const double mileTokm = 1.609344;
             Console.WriteLine("Light speed = {0} km Per second", lightSpeed * mileTokm);
-            const double SunToUranusDistance = 2873550000;  // miles
-            Console.WriteLine("SunToUranusDistance = {0} km", SunToUranusDistance * mileTokm);
-            double SunToUranusTimeOfLight = SunToUranusDistance / lightSpeed;  // miles
-            Console.WriteLine("SunToUranusTimeOfLight = {0} seconds", SunToUranusTimeOfLight);
-            Console.WriteLine("SunToUranusTimeOfLight = {0} minutes", SunToUranusTimeOfLight / 60d);
+            const double SunToNeptuneDistance = 4501000000;  // miles
+            Console.WriteLine("SunToNeptuneDistance = {0} km", SunToNeptuneDistance * mileTokm);
+            double SunToNeptuneTimeOfLight = SunToNeptuneDistance / lightSpeed;  // miles
+            Console.WriteLine("SunToNeptuneTimeOfLight = {0} seconds", SunToNeptuneTimeOfLight);
+            Console.WriteLine("SunToNeptuneTimeOfLight = {0} minutes", SunToNeptuneTimeOfLight / 60d);
             
         }
     }
